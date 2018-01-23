@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header-partial :: my-header(${post.title})"></head>
+<body>
+
+<header th:replace="fragments/navbar-partial :: my-navbar"></header>
+<main>
+    <h1 class="post-title" th:text="${post.title}"></h1>
+    <p class="post-body" th:text="${post.body}"></p>
+</main>
+
+<div th:replace="fragments/footer-partial :: my-navbar"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--<meta charset="UTF-8">-->
+<!--<title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head th:replace="fragments/header :: main-header(${post.title})">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1 th:text="${post.title}"></h1>-->
+<!--<p th:text="${post.body}"></p>-->
+<!--</body>-->
+<!--</html>-->

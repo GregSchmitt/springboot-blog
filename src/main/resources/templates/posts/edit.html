@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header-partial :: my-header('Edit Ad')"></head>
+<body>
+<main>
+    <h1>Edit Post</h1>
+
+    <form id="editpost" action="/posts/edit" method="post" th:object="${post}">
+        <input type="hidden" th:field="*{id}"/>
+        Title:
+        <input th:field="*{title}"/>
+        <br/>
+        Body:
+        <br/>
+        <textarea th:field="*{body}" form="editpost" cols="50" rows="5"></textarea>
+        <br/>
+        <input type="submit"/>
+    </form>
+
+    <form action="/posts/delete" method="post" th:object="${post}">
+        <input type="hidden" th:field="*{id}"/>
+        <input type="submit" value="Delete"/>
+    </form>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--<meta charset="UTF-8">-->
+<!--<title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
